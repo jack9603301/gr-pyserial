@@ -113,7 +113,7 @@ class serial_port(gr.block):
             bytesize=serial.EIGHTBITS
         )
         '''
-        print "Opened: ",self.ser.portstr       # check which port was really used
+        print("Opened: ",self.ser.portstr)       # check which port was really used
         self.ser.write("hel;lkfsdsa;lkfjdsaflo\n\r")      # write a string
         #ser.close()             # close port
 
@@ -151,5 +151,5 @@ class serial_port(gr.block):
             try:
                 a =0
             except:
-                print "exiting"
+                print("exiting")
                 return -1
